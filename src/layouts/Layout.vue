@@ -6,7 +6,7 @@
       <q-toolbar>
 
         <q-btn
-          v-if="$route.fullPath.includes()"
+          :v-if="$route.fullPath.includes('{{ title }}')"
           v-go-back.single
           icon="arrow_back"
           flat
@@ -47,21 +47,6 @@ export default {
         return 'About'
       } else {
         return 'About'
-      }
-    },
-    title1 () {
-      console.log(this.$route)
-      const currentPath = this.$route.fullPath
-      if (currentPath === '/settings') {
-        return 'Settings'
-      } else if (currentPath === '/data') {
-        return 'Data'
-      } else if (currentPath === '/input') {
-        return 'Input Berita'
-      } else if (currentPath === '/about') {
-        return 'About'
-      } else {
-        return 'Salah Masuk Pak'
       }
     }
   }
