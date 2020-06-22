@@ -14,8 +14,11 @@ module.exports = function (/* ctx */) {
     // https://quasar.dev/quasar-cli/cli-documentation/boot-files
     boot: [
 
+<<<<<<< HEAD
       'i18n',
       'axios'
+=======
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
@@ -88,8 +91,12 @@ module.exports = function (/* ctx */) {
         'QTh',
         'QTr',
         'QTd',
+<<<<<<< HEAD
         'QImg',
         'QEditor'
+=======
+        'QImg'
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
       ],
 
       directives: [
@@ -99,31 +106,49 @@ module.exports = function (/* ctx */) {
 
       // Quasar plugins
       plugins: [
+<<<<<<< HEAD
         'Notify',
         'Dialog'
+=======
+        'Notify'
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
       ]
     },
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie
+<<<<<<< HEAD
     supportIE: true,
+=======
+    supportIE: false,
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ts
     supportTS: false,
 
+<<<<<<< HEAD
     // https://quasar.dev/quasar-cli/cli-documentation/prefetch-feature
     // preFetch: true
 
+=======
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
 
       // rtl: false, // https://quasar.dev/options/rtl-support
+<<<<<<< HEAD
       // preloadChunks: true,
+=======
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
       // showProgress: false,
       // gzip: true,
       // analyze: true,
 
       // Options below are automatically set depending on the env, set them if you want to override
+<<<<<<< HEAD
+=======
+      // preloadChunks: false,
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
       // extractCSS: false,
 
       // https://quasar.dev/quasar-cli/cli-documentation/handling-webpack

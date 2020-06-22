@@ -15,11 +15,27 @@
           style="color: #2196f3">
             Now News
           </header>
+<<<<<<< HEAD
           <q-space/>
           <header
           style="color: #2196f3">
             Admin
           </header>
+=======
+          <q-input
+            bg-color="$grey"
+            outlined
+            rounded
+            style="width: 700px"
+            label="search"
+            dense>
+
+            <template v-slot:append>
+              <q-icon v-if="text === ''" name="search" />
+              <q-icon v-else name="clear" class="cursor-pointer" @click="text = ''" />
+            </template>
+          </q-input>
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
         </q-toolbar>
     </q-header>
     <q-space/>
@@ -29,9 +45,15 @@
       show-if-above
       elevated
       :class="$q.dark.isActive ? 'bg-dark' : 'bg-white'"
+<<<<<<< HEAD
       >
       <q-list dark>
         <q-item-label class="bg-info" header >Navigation</q-item-label>
+=======
+    >
+      <q-list dark>
+        <q-item-label header style="color: #2196f3">Navigation</q-item-label>
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
 
         <q-item
           v-for="nav in navs"
@@ -84,7 +106,10 @@ export default {
   name: 'MyLayout',
   data () {
     return {
+<<<<<<< HEAD
       cari: null,
+=======
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
       leftDrawerOpen: this.$q.platform.is.desktop,
       navs: [
         {
@@ -94,12 +119,15 @@ export default {
           leftDrawerOpen: false
         },
         {
+<<<<<<< HEAD
           label: 'Cari Berita',
           icon: 'search',
           to: '/cari',
           leftDrawerOpen: false
         },
         {
+=======
+>>>>>>> d8f9bdcd8d9ecb754b639f553f49fa4c210371d8
           label: 'Data Berita',
           icon: 'assessment',
           to: '/data',
